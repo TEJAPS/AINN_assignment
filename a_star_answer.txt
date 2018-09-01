@@ -1,0 +1,24 @@
+It could work but would involved calculating the distance to all current expanded nodes on the other side and expanding the node on its side that minimises that distance. If there's a bottle neck before a curve in the solution path it could work well. Essentially you would run 2 A* where the evaluation function references the expand node list of the other, and loops through all expanded nodes of the other search to determine which node on its side to expand next.
+Applicable when: 
+1. Instead of searching from the start to the finish, you can start two searches in parallel―one from start to finish, and one from finish to start. When they meet, you should have a good path.
+2. It’s a good idea that will help in some situations. The idea behind bidirectional searches is that searching results in a “tree” that fans out over the map. A big tree is much worse than two small trees, so it’s better to have two small search trees.
+
+
+Algorithm : 
+1. Here two separate uni-directional A* searches are carried out simultaneously from both nodes s and t.
+2. To keep track of two simultaneous A * searches, separate OPEN/CLOSED sets are needed for both search directions.
+Let these sets be OPENf/ CLOSEDf and OPENb/CLOSEDb for the forward and backward search,respectively.
+3. Similarly, each search direction must make use of its own distinct heuristic function, given that each direction is searching towards a different goal node. We denote the heuristic search functions as hf and hb for the forward and backward search directions, respectively.
+4. In the context of bidirectional A* search,h(v) behaves as before by providing a lower- bound estimate on the cost d(v,t) whereas hb(v) provides a lower bound estimate on the cost d(s,v)
+for forward search f values are ff(v)=gf(v)+hf(v) and backward values are fb(v)=gb(v)+hb(v).
+5. In general, the bidirectional algorithm proceeds by iteratively switching between each search direction according to some predefined alternating strategy (like, choosing the search direction to expand as the direction with the minimum f-value in its open set or simply alternating between search directions).
+6. The termination criterion is based on the shortest path distance, μ, seen thus far in the search. Initially, the bidirectional algorithm sets μ=∞ Whenever the search in a given direction closes a node v such that v has already been closed in the opposite search direction, then the algorithm sets
+μ = min(μ,gf(v)+gb(v))
+
+
+If the search algorithm is terminated as soon as
+Max(kf,kb)>= μ	where kf=min(ff(v)|v is OPENf) and kb=min{fb(v)| v is OPENb}
+
+This guarantees to terminate with an optimal shortest path.The optimality for this termination criterion holds for any admissible heuristic functions, hf and hb(even inconsistent ones, as long as node re-opening is allowed).
+
+Here the optimal path is B->A->E->D->C which gives a cost of 12+11+13+5= 41
