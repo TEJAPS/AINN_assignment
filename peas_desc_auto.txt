@@ -1,4 +1,4 @@
-﻿Peas description for automated taxi and diagnosis system:-
+﻿Peas description for automated taxi :-
 
 1) Performance measure: Safe, fast, legal, comfortable trip, maximize
 profits
@@ -6,3 +6,11 @@ profits
 3)  Actuators: Steering wheel, accelerator, brake, signal, horn
 4) Sensors: Cameras, sonar, speedometer, GPS, odometer, engine
 sensors, keyboard
+
+Peas description for diagnosis system:-
+1) Performance measure: Healthy patient, minimize costs, lawsuits
+2) Environment: Patient, hospital, staff
+3) Actuators: Screen display (questions, tests, diagnoses, treatments,
+referrals)
+4) Sensors: Keyboard (entry of symptoms, findings, patient's
+answers)
