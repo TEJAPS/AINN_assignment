@@ -1,0 +1,9 @@
+
+peas description for automated taxi and diagnosis system:-
+
+Performance measure: Safe, fast, legal, comfortable trip, maximize
+profits
+• Environment: Roads, other traffic, pedestrians, customers
+• Actuators: Steering wheel, accelerator, brake, signal, horn
+• Sensors: Cameras, sonar, speedometer, GPS, odometer, engine
+sensors, keyboard
