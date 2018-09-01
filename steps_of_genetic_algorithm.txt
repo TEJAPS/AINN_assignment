@@ -1,3 +1,5 @@
+step wise algorithm of genetic algorithm:-
+
 1.[Start] Generate random population of n chromosomes (suitable solutions for the problem)
 
 2.[Fitness] Evaluate the fitness f(x) of each chromosome x in the population

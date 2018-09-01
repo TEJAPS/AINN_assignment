@@ -1,24 +1,32 @@
-1-Complete vs. Incomplete
+﻿their are total of 6 environments:-
 
-Complete AI environments are those on which, at any give time, we have enough information to complete a branch of the problem. Chess is a classic example of a complete AI environment. Poker, on the other hand, is an incomplete environments as AI strategies can’t anticipate many moves in advance and, instead, they focus on finding a good ‘equilibrium” at any given time.
+1-Complete vs. Incomplete
+Complete AI environments are those on which, at any give time, we have enough information to complete a branch of the problem. 
+Example:- 
+Chess is a classic example of a complete AI environment. Poker, on the other hand, is an incomplete environments as AI strategies can’t anticipate many moves in advance and, instead, they focus on finding a good ‘equilibrium” at any given time.
 
 2-Fully Observable vs. Partially Observable
-
 A fully observable AI environment has access to all required information to complete target task. Image recognition operates in fully observable domains. Partially observable environments such as the ones encountered in self-driving vehicle scenarios deal with partial information in order to solve AI problems.
+Example - waterfall model of SDLC.
 
 3-Competitive vs. Collaborative
-
-Competitive AI environments face AI agents against each other in order to optimize a specific outcome. Games such as GO or Chess are examples of competitive AI environments. Collaborative AI environments rely on the cooperation between multiple AI agents. Self-driving vehicles or cooperating to avoid collisions or smart home sensors interactions are examples of collaborative AI environments.
+Competitive AI environments face AI agents against each other in order to optimize a specific outcome. 
+Example:-
+Games such as GO or Chess are examples of competitive AI environments. Collaborative AI environments rely on the cooperation between multiple AI agents. Self-driving vehicles or cooperating to avoid collisions or smart home sensors interactions are examples of collaborative AI environments.
 
 4-Static vs. Dynamic
-
 static AI environments rely on data-knowledge sources that don’t change frequently over time. Speech analysis is a problem that operates on static AI environments. Contrasting with that model, dynamic AI environments such as the vision AI systems in drones deal with data sources that change quite frequently.
+Example:-
+Air condition temperature controlling
 
 5-Discrete vs. Continuous
-
 Discrete AI environments are those on which a finite [although arbitrarily large] set of possibilities can drive the final outcome of the task. Chess is also classified as a discrete AI problem. Continuous AI environments rely on unknown and rapidly changing data sources. Vision systems in drones or self-driving cars operate on continuous AI environments.
+Example:-
+classfication vs regression problem respectively.
 
 6-Deterministic vs. Stochastic
-
 Deterministic AI environments are those on which the outcome can be determined base on a specific state. In other words, deterministic environments ignore uncertainty. Most real world AI environments are not deterministic. Instead, they can be classified as stochastic. Self-driving vehicles are a classic example of stochastic AI processes.
+Example:-
+clock's next state based on current state
+
 
